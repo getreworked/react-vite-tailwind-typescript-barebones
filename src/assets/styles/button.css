@@ -1,0 +1,10 @@
+/*
+  By using the @layer directive, Tailwind will automatically move those styles
+  to the same place as tailwind base to avoid unintended specificity issues.
+  https://tailwindcss.com/docs/adding-base-styles#using-css
+*/
+@layer base {
+  .button {
+    @apply px-2 py-1 bg-gray-200 rounded-md hover:bg-gray-300;
+  }
+}
